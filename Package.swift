@@ -17,9 +17,12 @@ let package = Package(
     targets: [
         .target(
             name: "SimpleAlertSDK",
-            dependencies: []),
+            dependencies: [],
+            path: "Sources/SimpleAlertSDK"), // Kaynak dosyalarının yolu
         .testTarget(
             name: "SimpleAlertSDKTests",
-            dependencies: ["SimpleAlertSDK"]),
+            dependencies: ["SimpleAlertSDK"],
+            path: "Tests/SimpleAlertSDKTests") // Test dosyalarının yolu burada
     ]
 )
+
